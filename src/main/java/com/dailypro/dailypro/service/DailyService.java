@@ -34,7 +34,8 @@ public class DailyService {
       if (daily.isPresent()){
 
        return  daily.get();
-      }else throw new EntityNotFoundException("Daily is not found");
+      }else {throw new EntityNotFoundException("Daily is not found");
+    }
     }
 
     public List<Daily> getAll(){
